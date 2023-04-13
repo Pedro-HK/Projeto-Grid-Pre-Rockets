@@ -1,0 +1,361 @@
+body{
+    background: linear-gradient(#090836, #030329, #020203, #020203, #0D0E13);
+    color: white;
+    font-family: 'Roboto', 'Montserrat', 'Nunito', 'Open Sans', 'Vollkorn', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* header */
+
+.header{
+    display: grid;
+    grid-template-rows: 4fr auto;
+    margin: 2rem 0 0 7rem;
+    grid-gap: 50px;
+}
+
+.header-1{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    'logo marte'
+    'titulo marte'    
+    ;
+    grid-gap: 50px;
+}
+
+.logo-1{
+    grid-area: logo;
+}
+
+.marte-com-pessoas{
+    grid-area: marte;
+    justify-self: end;
+}
+
+.header-titulo{
+    grid-area: titulo;
+}
+
+h5{
+    letter-spacing: 2.4px;
+    text-transform: uppercase;
+    color: #F5D15F;
+    margin-bottom: 0.5rem;
+}
+
+.header-titulo h1{
+    font-size: 3.5rem;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+}
+
+.header-titulo p{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.botao-laranja{
+    background-color: #E85937;
+    border-radius: 6px;
+    color: white;
+}
+
+.botao-increver{
+    font-size: 1.5rem;
+    padding: 8px 32px;
+}
+
+.header-2{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-between;
+    grid-gap: 50px;
+}
+
+.div-foguete-header{
+    width: 200px;
+}
+
+.div-missao-header{
+    width: 200px;
+}
+
+.div-experiencia-header{
+    width: 200px;
+}
+
+/* main */
+
+.main{
+    margin-top: 150px;
+    background-image: url(imagens/Starts.svg);
+}
+
+.div-sobre-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 7rem 50px 25px;
+    align-items: center;
+}
+
+.div-sobre-container .div-sobre h2{
+    font-size: 2.5rem;
+}
+
+.div-sobre-container .div-sobre p{
+    line-height: 1.5rem;
+}
+
+.div-caminho-container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 7rem;
+    margin-left: 7rem;
+    align-items: center;
+}
+
+.div-caminho-container .div-caminho h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.div-caminho-container .div-caminho a{
+    color: #FF8C70;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.imagens-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 1rem;
+    max-width: 770px;
+    align-items: center;
+}
+
+.item{
+    opacity: 0.6;
+}
+
+.item-selecionado{
+    opacity: 1;
+}
+
+.galeria-container{
+    overflow-x: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.galeria-container::-webkit-scrollbar{
+    display: none;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+}
+
+.botao-carrosel-de-imagens{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    height: 40px;
+}
+
+.div-formulario-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin: 300px 7rem 0;
+    justify-items: center;
+    grid-gap: 100px;
+}
+
+.div-formulario-container .formulario{
+    display: grid;
+    grid-template-columns: auto;
+    background-color: #0E0D40;
+    align-self: start;
+    padding: 3rem;
+    border-radius: 15px;
+}
+
+.div-formulario-container .formulario h3{
+    font-size: 2rem;
+    max-width: 330px;
+    margin: 1.5rem 0;
+    line-height: 2.5rem;
+}
+
+.div-formulario-container .formulario p{
+    max-width: 240px;
+    margin: 0 0 3rem;
+}
+
+#nome{
+    margin: 0.5rem 0 1.5rem;
+}
+
+#email{
+    margin: 0.5rem 0 1.5rem;
+}
+
+#telefone{
+    margin: 0.5rem 0 2rem;
+}
+
+.caixa{
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 6px;
+    height: 50px;
+}
+
+.div-checkbox{
+    margin-bottom: 3rem;
+}
+
+input[type="checkbox"]:checked + label .span-caixa{
+    background-color: green;
+    position: relative;
+}
+
+input[type="checkbox"]:checked + label .span-caixa::before{
+    content: "";
+    position: absolute;
+    display: block;
+    right: 8px;
+    left: 8px;
+    top: 0px;
+    bottom: 5px;
+    border: white 2px solid;
+    transform: rotate(45deg);
+    box-sizing: border-box;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+input[type='checkbox']{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+}
+
+.span-caixa{
+    display: inline-block;
+    background-color: transparent;
+    border: white 1px solid;
+    border-radius: 6px;
+    width: 25px;
+    height: 25px;
+    margin-right: 1rem;
+}
+
+.botao-submeter{
+    border: none;
+    font-size: 1.125rem;
+    padding: 12px 7rem;
+    cursor: pointer;
+}
+
+/* footer */
+
+.footer img{
+    width: 100%;
+}
+
+/* Responsivo */
+
+@media screen and (max-width:1366px){
+    .div-formulario-container{
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (max-width:1190px){
+    .div-sobre-container{
+        grid-template-columns: auto;
+        justify-items: center;
+        margin: 0 7rem 50px;
+    }
+    .div-sobre{
+        grid-row: 1 / 2;
+    }
+}
+
+@media screen and (max-width:1050px){
+    .header-1{
+    grid-template-rows: auto auto auto;
+    grid-template-areas: 
+    'logo logo'
+    'titulo titulo'
+    'marte marte'    
+    ;
+    }
+}
+
+@media screen and (max-width:915px){
+    .marte{
+        width: 50%;
+    }
+    .header-2{
+        grid-template-columns: repeat(2, auto);
+    }
+    .div-experiencia-header{
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width:870px){
+    .item{
+        width: 250px;
+        height: 250px;
+    }
+    .div-caminho-container{
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        margin-left: 2rem;
+    }
+    .div-caminho{
+        margin-right: 2rem;
+    }
+}
+
+@media screen and (max-width:780px){
+    .Foguete{
+        width: 50%;
+    }
+    .botao-submeter{
+        padding: 12px 0;
+    }
+}
+
+@media screen and (max-width:580px){
+    .marte-com-pessoas{
+        width: 70%;
+    }
+    .header-2{
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+    .div-experiencia-header{
+        grid-column: 1 / 2;
+    }
+    .header{
+        margin: 2rem 0 0 3rem;
+    }
+    .div-sobre-container{
+        margin: 0 2rem 50px;
+    }
+    .div-formulario-container{
+        margin: 300px 2rem 0;
+    }
+}
