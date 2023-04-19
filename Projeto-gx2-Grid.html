@@ -24,15 +24,15 @@
             </div>
         </div>
         <div class="header-2">
-            <div class="div-foguete-header">
+            <div class="div-foguete-header card">
                 <img src="imagens/Grupo 2.svg" alt="Foguetinho">
                 <p>Foguetes com a mais alta tecnologia e conforto.</p>
             </div>
-            <div class="div-missao-header">
+            <div class="div-missao-header card">
                 <img src="imagens/Icon02.svg" alt="Missão">
                 <p>Mais de 100 missões consecutivas com sucesso.</p>
             </div>
-            <div class="div-experiencia-header">
+            <div class="div-experiencia-header card">
                 <img src="imagens/Frame 3.svg" alt="Experiência">
                 <p>Experiência única e exclusiva.</p>
             </div>
@@ -55,7 +55,7 @@
                 <a href="#forms">Inscreva-se agora</a>
             </div>
             <div class="imagens-container">
-                <button class="botao-carrosel-de-imagens" onclick="controle()"><img src="imagens/icone-seta.png" alt="Seta"></button>
+                <button class="botao-carrosel-de-imagens" id="carrosel-de-imagens"><img src="imagens/icone-seta.png" alt="Seta"></button>
                 <div class="galeria-container">
                     <div class="galeria">
                         <img src="imagens/image 35.png" alt="Foto de Marte" class="item-selecionado item">
@@ -70,17 +70,19 @@
                 <img src="imagens/Icon_ticket.svg" alt="Ticket">
                 <h3>Garanta a sua vaga para a primeira viagem</h3>
                 <p>Preencha os campos abaixo para entrar na lista de espera</p>
-                <label for="nome">Seu nome</label>
-                <input type="text" name="nome" id="nome" class="caixa">
-                <label for="email">E-mail</label>
-                <input type="email" name="email" id="email" class="caixa">
-                <label for="telefone">Telefone</label>
-                <input type="number" name="telefone" id="telefone" class="caixa">
-                <div class="div-checkbox">
-                    <input type="checkbox" id="check">
-                    <label for="check"><span class="span-caixa"></span>Concordo em receber comunicações</label>
-                </div>
-                <input type="submit" value="Garantir a minha vaga" class="botao-laranja botao-submeter">
+                <form class="form">
+                    <label for="nome">Seu nome</label>
+                    <input type="text" name="nome" id="nome" class="caixa">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" class="caixa">
+                    <label for="telefone">Telefone</label>
+                    <input type="number" name="telefone" id="telefone" class="caixa">
+                    <div class="div-checkbox">
+                        <input type="checkbox" id="check">
+                        <label for="check"><span class="span-caixa"></span>Concordo em receber comunicações</label>
+                    </div>
+                    <input type="submit" value="Garantir a minha vaga" class="botao-laranja botao-submeter">
+                </form>
             </div>
             <img src="imagens/Rocket_illustra.png" alt="Foguete" class="Foguete">
         </div>
