@@ -22,8 +22,8 @@ Desenvolver um site web, com um modelo de design pré-estabelecido, utilizando a
 
 ## Como acessar o projeto
 
-Baixe as pastas "imagens" e "Fontes"
+1) Baixe as pastas "imagens" e "Fontes"
 
-Abra o arquivo HTML no Vsual Studio Code
+2) Abra o arquivo "Projeto-gx2-Grid.html" no Visual Studio Code
 
-Execute o live preview
+3) Execute o live preview do arquivo HTML "Projeto-gx2-Grid.html"
